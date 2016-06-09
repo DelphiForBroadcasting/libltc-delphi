@@ -1,0 +1,86 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 367
+  ClientWidth = 552
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Size.Width = 552.000000000000000000
+    Size.Height = 288.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 345.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 552.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 552.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button1: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'TestErrorText'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Position.X = 104.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'TestVersion'
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Position.X = 192.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 2
+      Text = 'TestApiInfo'
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Position.X = 280.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 3
+      Text = 'TestDeviceInfo'
+      OnClick = Button4Click
+    end
+    object Button5: TButton
+      Position.X = 368.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 4
+      Text = 'TestFormatInfo'
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Position.X = 456.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 5
+      Text = 'TestStreams'
+      OnClick = Button6Click
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 264
+    Top = 168
+    object MenuItem1: TMenuItem
+      Text = 'About'
+      OnClick = MenuItem1Click
+    end
+  end
+end

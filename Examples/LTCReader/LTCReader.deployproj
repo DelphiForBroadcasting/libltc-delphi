@@ -1,0 +1,381 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice'">
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Debug\LTCReader.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>LTCReader.exe</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="OSX32\Debug\LTCReader.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>LTCReader.rsm</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>LTCReader.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\LTCReader.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\Contents\Resources\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="time-7-multi-size.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\Contents\Resources\</RemoteDir>
+            <RemoteName>LTCReader.icns</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\LTCReader" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>LTCReader</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\LTCReader.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\../\</RemoteDir>
+            <RemoteName>LTCReader.entitlements</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\Contents\Frameworks\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader.app\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="lib\portaudio\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\LTCReader.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>LTCReader.exe</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Build\OSX\libportaudio.2.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>libportaudio.2.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="TTF\DS-DIGI.TTF" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>DS-DIGI.TTF</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\LTCReader.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>LTCReader\</RemoteDir>
+            <RemoteName>LTCReader.rsm</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

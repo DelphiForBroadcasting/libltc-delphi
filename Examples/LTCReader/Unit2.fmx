@@ -1,0 +1,30 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Debug'
+  ClientHeight = 274
+  ClientWidth = 525
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Size.Width = 525.000000000000000000
+    Size.Height = 252.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 252.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 525.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+end
