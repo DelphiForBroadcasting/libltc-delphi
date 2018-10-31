@@ -501,11 +501,11 @@ var
   DefaultInputDeviceIndex: TPaDeviceIndex;
   DeviceInfo  : PPaDeviceInfo;
 begin
-  HostApiTypeId:=ListHostApi.Items[combobox1.ItemIndex]^._type;
+  HostApiTypeId:=ListHostApi.Items[combobox1.ItemIndex]^.typeId;
   HostApiIndex:=Pa_HostApiTypeIdToHostApiIndex(HostApiTypeId);
   EnumerationDevice(HostApiIndex, ListDevice, true);
 
-  combobox2.Items.Clear;
+  combobox2.Clear;
   for I := 0 to ListDevice.Count-1 do
     combobox2.Items.Add(string(ListDevice.Items[i]^.name));
 

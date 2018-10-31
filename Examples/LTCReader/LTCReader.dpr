@@ -5,12 +5,11 @@ program LTCReader;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  ctypes in '..\..\lib\portaudio\src\ctypes.pas',
-  portaudio in '..\..\lib\portaudio\src\portaudio.pas',
-  FH.LIBLTC.LTC in '..\..\Include\FH.LIBLTC.LTC.pas',
-  FH.LIBLTC.TIMECODE in '..\..\Include\FH.LIBLTC.TIMECODE.pas',
-  FH.LIBLTC.DECODER in '..\..\Include\FH.LIBLTC.DECODER.pas',
-  FH.LIBLTC in '..\..\Include\FH.LIBLTC.pas',
+  portaudio in '..\..\Include\portaudio-delphi\Include\portaudio.pas',
+  FH.LIBLTC.LTC in '..\..\Source\FH.LIBLTC.LTC.pas',
+  FH.LIBLTC.TIMECODE in '..\..\Source\FH.LIBLTC.TIMECODE.pas',
+  FH.LIBLTC.DECODER in '..\..\Source\FH.LIBLTC.DECODER.pas',
+  FH.LIBLTC in '..\..\Source\FH.LIBLTC.pas',
   Unit1 in 'Unit1.pas' {Form1},
   Unit2 in 'Unit2.pas' {Form2};
 

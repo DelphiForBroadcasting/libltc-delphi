@@ -1,8 +1,0 @@
-total = 0 - n= 1024
-total = 1024 - n= 1024
-frame.hours_units=0 frame.hours_tens=0
-frame->mins_units=5 frame->mins_tens=0
-frame->secs_units=7  frame->secs_tens=2
-frame->frame_units=7 frame->frame_tens=1
-total = 2048 - n= 312
-total = 2360 - n= 0

@@ -6,9 +6,9 @@ program Decoder;
 
 uses
   System.SysUtils,
-  FH.LIBLTC.LTC in '../../Include/FH.LIBLTC.LTC.pas',
-  FH.LIBLTC.TIMECODE in '../../Include/FH.LIBLTC.TIMECODE.pas',
-  FH.LIBLTC.DECODER in '../../Include/FH.LIBLTC.DECODER.pas';
+  FH.LIBLTC.LTC in '../../Source/FH.LIBLTC.LTC.pas',
+  FH.LIBLTC.TIMECODE in '../../Source/FH.LIBLTC.TIMECODE.pas',
+  FH.LIBLTC.DECODER in '../../Source/FH.LIBLTC.DECODER.pas';
 
 const
   apvDef = 1920;

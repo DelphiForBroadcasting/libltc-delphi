@@ -1,0 +1,3 @@
+[submodule "Include/portaudio-delphi"]
+	path = Include/portaudio-delphi
+	url = https://github.com/DelphiForBroadcasting/portaudio-delphi
